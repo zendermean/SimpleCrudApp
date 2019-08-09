@@ -10,7 +10,7 @@
     <title>CRUD Hot Dog App</title>
 </head>
 <body>
-    
+    <?php echo "HEllo";?>
     <?php
         if(isset($_SESSION['message'])):
     ?>
