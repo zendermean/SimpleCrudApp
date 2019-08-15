@@ -33,13 +33,13 @@ if(isset($_GET['delete'])){
 
 if(isset($_GET['edit'])){
     $id = $_GET['edit'];
-    $result = $mysqli->query("SELECT * FROM tb_hot_dog WHERE id=$id") or die($mysqli->error());
+    $result = $mysqli->query("SELECT * FROM tb_hot_dog WHERE id=$id LIMIT 1") or die($mysqli->error());
     $update = true;
-    if(count($result)==1){
+    //if(count($result)==1){
         $row = $result->fetch_array();
         $name = $row['name'];
         $price = $row['price'];
-    }
+    //} :*
 }
 
 if(isset($_POST['update'])){
