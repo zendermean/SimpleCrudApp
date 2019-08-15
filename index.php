@@ -69,7 +69,7 @@
                 </div>
                 <div class="form-group">
                     <label>Price</label>
-                    <input type="text" name="price" class="form-control" placeholder="Enter the price" value="<?php echo $price;?>">
+                    <input type="number" name="price" class="form-control" placeholder="Enter the price" value="<?php echo $price;?>">
                 </div>
                 <div class="form-group">
                 <?php    
